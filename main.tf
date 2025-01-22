@@ -10,7 +10,7 @@ terraform {
 
 # AWS 제공자 설정
 provider "aws" {
-  region = "ap-northeast-2"
+  region = "us-west-2"
 }
 
 # 현재 설정된 AWS 리전에 있는 가용영역 정보 불러오기
