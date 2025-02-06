@@ -32,7 +32,7 @@ resource "aws_cloud9_environment_ec2" "this" {
   instance_type               = "t3.medium"
   name                        = "ecs"
   image_id                    = "amazonlinux-2023-x86_64"
-  automatic_stop_time_minutes = 60
+  automatic_stop_time_minutes = 0
   connection_type             = "CONNECT_SSH"
   subnet_id                   = module.vpc.public_subnets[0]
 }
